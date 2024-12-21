@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/styles.css" />
+    </head>
+    <body>
+        <div class="store">
+            <header class="header">
+                <div class="header__logo">
+                    <span class="header__hearts">❤️❤️❤️</span>
+                    <h1 class="header__title">AluraGeek</h1>
+                </div>
+            </header>
+
+            <main class="main">
+                <section class="products">
+                    <h2 class="products__title">MIS PRODUCTOS:</h2>
+                    <ul class="products__grid" id="products">
+                        <!-- Here procutss will be added
+                        <div class="product-card">
+                            <img
+                                class="product-card__image"
+                                src="https://via.placeholder.com/300"
+                                alt="Producto 1"
+                            />
+                            <div class="product-card__info">
+                                <span class="product-card__name">Producto 1</span>
+                                <span class="product-card__price">$ 100.00</span>
+                            </div>
+                        </div> -->
+                    </ul>
+                </section>
+
+                <aside class="form">
+                    <h2 class="form__title">AGREGAR PRODUCTO:</h2>
+                    <form class="form__container" id="form">
+                        <input
+                            type="text"
+                            name="title"
+                            class="form__input"
+                            placeholder="nombre..."
+                        />
+                        <input
+                            type="text"
+                            name="price"
+                            class="form__input"
+                            placeholder="precio..."
+                        />
+                        <input
+                            type="text"
+                            name="image"
+                            class="form__input"
+                            placeholder="imagen..."
+                        />
+                        <div class="form__buttons">
+                            <button
+                                id="form-create-button"
+                                type="submit"
+                                class="form__button form__button--submit"
+                            >
+                                Enviar
+                            </button>
+                            <button
+                                id="delete-button"
+                                type="reset"
+                                class="form__button form__button--reset"
+                            >
+                                Limpiar
+                            </button>
+                        </div>
+                    </form>
+                </aside>
+            </main>
+
+            <footer class="footer">
+                <div class="footer__content">
+                    <span class="footer__hearts">❤️❤️❤️</span>
+                    <span class="footer__text">AluraGeek</span>
+                    <span class="footer__copyright">Reto propuesto</span>
+                    <span class="footer__year">ALURA LATAM - 2024</span>
+                </div>
+            </footer>
+        </div>
+        <script src="/js/renderProducto.js" type="module"></script>
+    </body>
+</html>
